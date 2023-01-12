@@ -1,0 +1,8 @@
+.Container {
+  margin: 0 auto;
+  z-index: 3000;
+}
+
+.Navbar {
+  z-index: 1000;
+}
