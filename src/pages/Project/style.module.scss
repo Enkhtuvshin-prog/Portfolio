@@ -1,0 +1,16 @@
+.Container{
+    background-color: #D4AC0D;
+    padding: 50px 0;
+}
+.Col{
+    width: calc(100%/2 - 30px);
+    margin: 15px;
+    img{
+        border-radius: 30px;
+    }
+};
+@media screen and (max-width: 800px) {
+    .Col{
+        width: 100%;
+    }
+}

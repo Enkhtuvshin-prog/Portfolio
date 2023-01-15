@@ -24,7 +24,7 @@ const NavbarMenu = () => {
           {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
           <Nav className="justify-content-end" activeKey="/home">
             <Nav.Item>
-              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="#Hero">Home</Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link href="#About">About</Nav.Link>
@@ -33,10 +33,10 @@ const NavbarMenu = () => {
               <Nav.Link href="#Skills">Skills</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="#Hero">Hero</Nav.Link>
+              <Nav.Link href="#Projects">Projects</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="#Projects">Projects</Nav.Link>
+              <Nav.Link href="#Education">Education</Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link href="#Contact">Contact</Nav.Link>

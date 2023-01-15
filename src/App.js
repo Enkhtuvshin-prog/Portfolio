@@ -7,12 +7,25 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import NavbarMenu from "./component/Navbar";
 import Hero from "./pages/Hero";
 import About from "./pages/About";
+import Skill from "./pages/Skill"
+import Education from "./pages/Education"
+import Project from "./pages/Project"
+import Contact from "./pages/Contact";
+import Footer from "./pages/Footer"
+import Chatbot from "./component/Chatbot";
+
 function App() {
   return (
     <div className="App">
       <NavbarMenu />
       <Hero />
-      <About />
+      <Chatbot/>
+      <About/>
+      <Skill/>
+      <Education/>
+      <Project/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }

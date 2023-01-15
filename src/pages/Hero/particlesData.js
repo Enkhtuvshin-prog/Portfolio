@@ -1,7 +1,8 @@
 export const particlesData = {
   background: {
     color: {
-      value: "#154360",
+      // value: "#000"
+      // value: "#ECF0F1",
     },
   },
   fpsLimit: 120,

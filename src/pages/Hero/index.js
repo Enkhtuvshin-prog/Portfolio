@@ -7,7 +7,8 @@ import { useCallback } from "react";
 import { Particles } from "react-particles";
 import { loadFull } from "tsparticles";
 import { particlesData } from "./particlesData";
-
+import { Button } from "react-bootstrap";
+import { FaHeadSideVirus} from 'react-icons/fa';
 const Hero = () => {
   const particlesInit = useCallback(async (engine) => {
     // console.log(engine);
@@ -18,7 +19,7 @@ const Hero = () => {
     await console.log(container);
   }, []);
   return (
-    <div className={styles.Container}>
+    <div className={styles.Container} id="Hero" >
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -51,7 +52,7 @@ const Hero = () => {
       </div>
       <div className={styles.HeroItem}>
         <div className={styles.ImgContainer}>
-          <img src="./img/me.jpeg" alt="" />
+          {/* <img  className={styles.Profile} src="./img/me.jpeg" alt="" /> */}
         </div>
       </div>
     </div>
