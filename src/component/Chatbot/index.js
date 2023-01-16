@@ -1,25 +1,32 @@
-import ReactDOM from 'react-dom';
-import React, { useState } from 'react';
+import ReactDOM from "react-dom";
+import React, { useState } from "react";
 // import styles from "./style.module.scss"
 // import Toggle from 'react-bootstrap-toggle';
-import { FaHeadSideVirus, FaWindowClose } from 'react-icons/fa';
-import { Container } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
-import "./style.css"
+import { FaHeadSideVirus, FaWindowClose } from "react-icons/fa";
+import { Container } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import "./style.css";
 
 const Chatbot = () => {
-
+  const [isClicked, setClicked] = useState(false);
+  const handleClick = () => {
+    console.log("daragdlaa", isClicked);
+    setClicked(!isClicked);
+  };
   return (
     <>
-      <Container>
+      <div className="chatbot">
         {/* <div className="Chat" > */}
-          {/* <Button className={styles.Idea}> */}
-          <input type ="checkbox" id="Check"/>
-           <label className="ChatBtn" for="check">
-              <FaHeadSideVirus className="Icon"  id="Comment" /><FaWindowClose className="Icon" id="Close"/>
-           </label>
-          {/* </Button> */}
+        {/* <Button className={styles.Idea}> */}
+
+        <button onClick={handleClick}>
+          <FaHeadSideVirus className="Icon" id="Comment" />
+        </button>
+
+        {/* </Button> */}
         {/* </div> */}
+      </div>
+      {isClicked == true ? (
         <div className="Wrapper">
           <div className="Header">
             <h6>Let's Chat - Online</h6>
@@ -27,16 +34,21 @@ const Chatbot = () => {
           <div className="text-center p-2">
             <span>Please fill out the form to start chat!</span>
           </div>
-          <div className="ChatForm" >
+          <div className="ChatForm">
             <input type="text" className="form-control" placeholder="Name" />
             <input type="text" className="form-control" placeholder="Email" />
-            <textarea className="form-control" placeholder="Your Text Message"></textarea>
+            <textarea
+              className="form-control"
+              placeholder="Your Text Message"
+            ></textarea>
             <button className="btn btn-success btn-block">Submit</button>
           </div>
         </div>
-      </Container>
+      ) : (
+        <FaWindowClose className="Icon" id="Comment" />
+      )}
     </>
-  )
-}
+  );
+};
 
 export default Chatbot;

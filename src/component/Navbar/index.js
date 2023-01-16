@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { Link } from "react-router-dom";
 
 const NavbarMenu = () => {
   return (
@@ -24,22 +25,26 @@ const NavbarMenu = () => {
           {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
           <Nav className="justify-content-end" activeKey="/home">
             <Nav.Item>
-              <Nav.Link href="#Hero">Home</Nav.Link>
+              <Nav.Link>
+                <Link to="/hero"> Home</Link>
+              </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="#About">About</Nav.Link>
+              <Nav.Link>
+                <Link to="/about"> About</Link>
+              </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="#Skills">Skills</Nav.Link>
+              <Nav.Link href="/skills">Skills</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="#Projects">Projects</Nav.Link>
+              <Nav.Link href="/projects">Projects</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="#Education">Education</Nav.Link>
+              <Nav.Link href="/education">Education</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="#Contact">Contact</Nav.Link>
+              <Nav.Link href="/contact">Contact</Nav.Link>
             </Nav.Item>
           </Nav>
         </Container>
