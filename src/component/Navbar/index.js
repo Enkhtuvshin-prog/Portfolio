@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const NavbarMenu = () => {
   return (
     <div className={styles.Container}>
-      <Navbar bg="dark" variant="dark" className={styles.Navbar}>
+      <Navbar  bg="light" expand="lg" className={styles.Navbar}>
         <Container>
           <Navbar.Brand href="#home">
             <img
@@ -22,31 +22,35 @@ const NavbarMenu = () => {
               alt="React Bootstrap logo"
             />
           </Navbar.Brand>
-          {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
-          <Nav className="justify-content-end" activeKey="/home">
-            <Nav.Item>
-              <Nav.Link>
-                <Link to="/hero"> Home</Link>
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link>
-                <Link to="/about"> About</Link>
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="/skills">Skills</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="/projects">Projects</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="/education">Education</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="/contact">Contact</Nav.Link>
-            </Nav.Item>
-          </Nav>
+          <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+          <Navbar.Collapse id="basic-navbar-nav">
+            {/* <Nav className="me-auto"> */}
+              {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
+              <Nav className="ms-auto" activeKey="/home">
+                <Nav.Item>
+                  <Nav.Link>
+                    <Link to="/hero"> Home</Link>
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link>
+                    <Link to="/about"> About</Link>
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href="/skills">Skills</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href="/projects">Projects</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href="/education">Education</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href="/contact">Contact</Nav.Link>
+                </Nav.Item>
+              </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
       {/* <header className="App-header">

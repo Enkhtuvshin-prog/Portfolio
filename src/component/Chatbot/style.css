@@ -1,76 +1,29 @@
-.Chat {
-  text-align: start;
+.ChatBtn {
+  /* text-align: start; */
   margin: 20px 0;
-  /* left: 10px; */
+  left: 10px;
   height: 50px;
   width: 50px;
   background-color: orange;
   border-radius: 50%;
-}
-
-.ChatBtn {
-  /* position: absolute; */
-  /* right: 14px; */
-  /* bottom: 30px; */
-  /* margin-bottom: 10px; */
   cursor: pointer;
-}
-#Check {
-  text-align: start;
-}
-.ChatBtn #Close {
-  display: none;
-}
+  position: relative;
 
-.ChatBtn .Icon {
-  /* position: relative; */
-  transition: all 0.9s ease;
 }
-
-#Check:checked ~ .ChatBtn {
-  display: block;
-  text-align: start;
-  pointer-events: auto;
-  transform: rotate(180deg);
-}
-
-#Check:checked ~ .ChatBtn #Comment {
-  display: none;
-}
-
-.ChatBtn .Icon {
-  font-size: 22px;
-  color: #fff !important;
-}
-
-.ChatBtn {
-  width: 50px;
-  height: 50px;
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  background-color: blue;
-  color: #fff;
-  font-size: 22px;
-  border: none;
-}
-
 .Wrapper {
   z-index: 1000;
   position: absolute;
-  left: 60px;
-  bottom: 60px;
-  /* bottom: 5px; */
+  left: 30px;
+  /* bottom: 10px; */
+  bottom: -100px;
   width: 300px;
   background-color: rgba(57, 132, 103, 0.451);
   border-radius: 5px;
   transition: all 0.4s;
-  /* display:none; */
 }
 
-#Check:checked ~ .Wrapper {
-  opacity: 1;
+#Comment{
+  font-size: 2rem;
 }
 
 .Header {
@@ -81,7 +34,7 @@
   color: #fff;
 }
 
-.chat-form {
+.ChatForm {
   padding: 15px;
 }
 
@@ -94,24 +47,8 @@ button {
 .ChatForm textarea {
   resize: none;
 }
-
-.FormControl:focus,
-.btn:focus {
-  box-shadow: none;
-}
-
-.btn,
-.btn:focus,
-.btn:hover {
-  background-color: blue;
-  border: blue;
-}
-
-#check {
-  display: none !important;
-}
 .chatbot {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  /* bottom: 5px; */
+  /* left: 10px; */
 }

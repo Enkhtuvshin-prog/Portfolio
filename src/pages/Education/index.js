@@ -2,9 +2,10 @@ import React from 'react'
 import { Container } from 'react-bootstrap';
 import {MdSchool} from 'react-icons/md';
 import { Typewriter } from 'react-simple-typewriter';
+import styles from "./style.module.scss"
 const index = () => {
   return (
-    <div className='my-5' id='Education'>
+    <div className='my-5' id={styles.Education}>
         <div>
             <h1>
                 <MdSchool/>{" "}

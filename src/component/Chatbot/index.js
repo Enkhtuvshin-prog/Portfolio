@@ -9,24 +9,16 @@ import "./style.css";
 
 const Chatbot = () => {
   const [isClicked, setClicked] = useState(false);
-  const handleClick = () => {
+  const handleClick = (() => {
     console.log("daragdlaa", isClicked);
     setClicked(!isClicked);
-  };
+  });
   return (
     <>
       <div className="chatbot">
-        {/* <div className="Chat" > */}
-        {/* <Button className={styles.Idea}> */}
-
-        <button onClick={handleClick}>
-          <FaHeadSideVirus className="Icon" id="Comment" />
-        </button>
-
-        {/* </Button> */}
-        {/* </div> */}
+        <button className="ChatBtn" onClick={handleClick}><FaHeadSideVirus  id="Comment"/> </button> 
       </div>
-      {isClicked == true ? (
+      {isClicked == true ? ( 
         <div className="Wrapper">
           <div className="Header">
             <h6>Let's Chat - Online</h6>
@@ -44,9 +36,8 @@ const Chatbot = () => {
             <button className="btn btn-success btn-block">Submit</button>
           </div>
         </div>
-      ) : (
-        <FaWindowClose className="Icon" id="Comment" />
-      )}
+      )  : null
+      }
     </>
   );
 };

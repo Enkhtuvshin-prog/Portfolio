@@ -4,10 +4,28 @@ import { Typewriter } from "react-simple-typewriter";
 import styles from "./style.module.scss";
 import {AiOutlineRight} from 'react-icons/ai';
 import Button from 'react-bootstrap/Button';
-
+// import { useCallback } from "react";
+// import { Particles } from "react-particles";
+// import { loadFull } from "tsparticles";
+// import {particlesData} from "./particlesData"
 const About = () => {
+  // const particlesInit = useCallback(async (engine) => {
+  //   // console.log(engine);
+  //   await loadFull(engine);
+  // }, []);
+
+  // const particlesLoaded = useCallback(async (container) => {
+  //   await console.log(container);
+  // }, []);
   return (
     <div id="About" className={styles.Container}>
+      {/* <div id="tsparticles"></div> */}
+      {/* <Particles
+        id="tsparticles"
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={particlesData}
+      /> */}
       <h1>
         {" "}
         <FaUser />{" "}

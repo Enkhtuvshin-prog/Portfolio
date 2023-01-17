@@ -7,7 +7,6 @@ import { useCallback } from "react";
 import { Particles } from "react-particles";
 import { loadFull } from "tsparticles";
 import { particlesData } from "./particlesData";
-import Chatbot from "../../component/Chatbot";
 import { Button } from "react-bootstrap";
 import { FaHeadSideVirus } from "react-icons/fa";
 const Hero = () => {
@@ -56,7 +55,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <Chatbot />
     </div>
   );
 };
