@@ -7,3 +7,29 @@
   z-index: 1000;
   /* position: fixed; */
 }
+.Bg {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  border-radius: 50%;
+}
+.Image {
+  animation: anime1 1s infinite linear;
+  /* animation-name: anime1;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-delay: initial;
+  animation-iteration-count: initial;
+  animation-direction: initial; */
+}
+@keyframes anime1 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
