@@ -1,9 +1,18 @@
 .Container{
     // background-color: #D4AC0D;
-    background: rgb(34,193,195);
-background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,45,134,1) 100%);
+    background-color: hsla(0, 0%, 0%, 0.927);
+    color: white;
+
+//     background: rgb(34,193,195);
+// background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,45,134,1) 100%);
 
     padding: 50px 0;
+}
+.Col a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: orange;
 }
 .Col{
     width: calc(100%/2 - 30px);

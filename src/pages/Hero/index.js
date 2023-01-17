@@ -7,8 +7,6 @@ import { useCallback } from "react";
 import { Particles } from "react-particles";
 import { loadFull } from "tsparticles";
 import { particlesData } from "./particlesData";
-import { Button } from "react-bootstrap";
-import { FaHeadSideVirus } from "react-icons/fa";
 const Hero = () => {
   const particlesInit = useCallback(async (engine) => {
     // console.log(engine);

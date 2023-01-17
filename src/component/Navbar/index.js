@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const NavbarMenu = () => {
   return (
     <div className={styles.Container}>
-      <Navbar bg="light" expand="lg" className={styles.Navbar}>
+      <Navbar  expand="lg" className={styles.Navbar}>
         <Container>
           <Navbar.Brand href="#home" className={styles.Bg}>
             <img

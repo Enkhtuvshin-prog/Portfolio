@@ -3,9 +3,28 @@ import { Container } from 'react-bootstrap';
 import {MdSchool} from 'react-icons/md';
 import { Typewriter } from 'react-simple-typewriter';
 import styles from "./style.module.scss"
-const index = () => {
+import { useCallback } from "react";
+import { Particles } from "react-particles";
+import { loadFull } from "tsparticles";
+import { particlesData } from "../Hero/particlesData";
+
+const Education = () => {
+    const particlesInit = useCallback(async (engine) => {
+        // console.log(engine);
+        await loadFull(engine);
+      }, []);
+    
+      const particlesLoaded = useCallback(async (container) => {
+        await console.log(container);
+      }, []);
   return (
     <div className='my-5' id={styles.Education}>
+         <Particles
+        id="tsparticles"
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={particlesData}
+      />
         <div>
             <h1>
                 <MdSchool/>{" "}
@@ -41,4 +60,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Education

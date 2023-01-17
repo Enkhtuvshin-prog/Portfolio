@@ -13,7 +13,7 @@ import Education from "./pages/Education";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
 // import Footer from "./pages/Footer";
-import Chatbot from "./component/Chatbot";
+// import Chatbot from "./component/Chatbot";
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
         <Route path="/projects" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Chatbot />
+      {/* <Chatbot /> */}
 
       {/* <Footer /> */}
     </div>

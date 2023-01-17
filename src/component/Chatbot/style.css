@@ -1,3 +1,7 @@
+.Bg{
+  background-color: hsla(0, 0%, 0%, 0.927);
+  width: 100%;
+}
 .ChatBtn {
   /* text-align: start; */
   margin: 20px 0;
@@ -8,8 +12,8 @@
   border-radius: 50%;
   cursor: pointer;
   position: relative;
-
 }
+
 .Wrapper {
   z-index: 1000;
   position: absolute;

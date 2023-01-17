@@ -4,28 +4,28 @@ import { Typewriter } from "react-simple-typewriter";
 import styles from "./style.module.scss";
 import {AiOutlineRight} from 'react-icons/ai';
 import Button from 'react-bootstrap/Button';
-// import { useCallback } from "react";
-// import { Particles } from "react-particles";
-// import { loadFull } from "tsparticles";
-// import {particlesData} from "./particlesData"
+import { useCallback } from "react";
+import { Particles } from "react-particles";
+import { loadFull } from "tsparticles";
+import {particlesData} from "../Hero/particlesData"
 const About = () => {
-  // const particlesInit = useCallback(async (engine) => {
-  //   // console.log(engine);
-  //   await loadFull(engine);
-  // }, []);
+  const particlesInit = useCallback(async (engine) => {
+    // console.log(engine);
+    await loadFull(engine);
+  }, []);
 
-  // const particlesLoaded = useCallback(async (container) => {
-  //   await console.log(container);
-  // }, []);
+  const particlesLoaded = useCallback(async (container) => {
+    await console.log(container);
+  }, []);
   return (
     <div id="About" className={styles.Container}>
       {/* <div id="tsparticles"></div> */}
-      {/* <Particles
+      <Particles
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
         options={particlesData}
-      /> */}
+      />
       <h1>
         {" "}
         <FaUser />{" "}
@@ -36,7 +36,7 @@ const About = () => {
       </h1>
       <div className="row  p-5">
         <div className="col-md-5 col-sm-12  rounded mx-auto d-block">
-          <img className={styles.Image} src="./img/me.jpeg" alt=""/>
+          <img className={styles.Image} src="./img/my.jpeg" alt=""/>
         </div>
         <div className="col-md-5 col-sm-12 text-start  my-3">
           <h2>I'm Enkhtuvshin</h2>

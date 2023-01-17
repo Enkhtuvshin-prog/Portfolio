@@ -14,7 +14,7 @@ const Chatbot = () => {
     setClicked(!isClicked);
   });
   return (
-    <>
+    <div className="Bg">
       <div className="chatbot">
         <button className="ChatBtn" onClick={handleClick}><FaHeadSideVirus  id="Comment"/> </button> 
       </div>
@@ -38,7 +38,7 @@ const Chatbot = () => {
         </div>
       )  : null
       }
-    </>
+    </div>
   );
 };
 

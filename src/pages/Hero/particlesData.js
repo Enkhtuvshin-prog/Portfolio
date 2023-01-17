@@ -30,10 +30,10 @@ export const particlesData = {
   },
   particles: {
     color: {
-      value: "#ffffff",
+      value: "#5B2C6F",
     },
     links: {
-      color: "#ffffff",
+      color: "#21618C ",
       distance: 150,
       enable: true,
       opacity: 0.5,

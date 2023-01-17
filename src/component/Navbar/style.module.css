@@ -1,8 +1,18 @@
 .Container {
   margin: 0 auto;
   z-index: 3000;
+  /* background-color: hsla(0, 0%, 0%, 0.927); */
+  background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(218,45,253,1) 100%);
 }
-
+.Container a{
+  color: #000;
+  font-weight: 600 ;
+}
+.Container a:hover{
+  color: white;
+  font-size: 1.5rem;
+}
 .Navbar {
   z-index: 1000;
   /* position: fixed; */
@@ -16,9 +26,10 @@
     rgba(252, 176, 69, 1) 100%
   );
   border-radius: 50%;
+  animation: bground 1s initial;
 }
 .Image {
-  animation: anime1 1s infinite linear;
+  animation: anime1 2s  ;
   /* animation-name: anime1;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-delay: initial;
@@ -26,10 +37,31 @@
   animation-direction: initial; */
 }
 @keyframes anime1 {
-  from {
+  /* from {
     transform: rotate(0);
   }
   to {
     transform: rotate(180deg);
+  } */
+  from {
+    transform: rotate(0deg);
   }
+  to {
+    transform: rotate(360deg);
+  }
+  /* from {
+    margin-left: 100%;
+    width: 200%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  } */
 }
