@@ -2,11 +2,10 @@
   margin: 0 auto;
   z-index: 3000;
   /* background-color: hsla(0, 0%, 0%, 0.927); */
-  background: rgb(34,193,195);
-background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(218,45,253,1) 100%);
+  background: #17202A;
 }
 .Container a{
-  color: #000;
+  color: #FFF;
   font-weight: 600 ;
 }
 .Container a:hover{
