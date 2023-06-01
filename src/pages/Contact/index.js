@@ -10,6 +10,7 @@ import { HiOutlineMail, HiPhone } from "react-icons/hi";
 import { AiFillMessage } from "react-icons/ai";
 import { Button } from "react-bootstrap";
 import { FaPaperPlane } from "react-icons/fa";
+import { SocialIcon } from "react-social-icons";
 
 const index = () => {
   return (
@@ -23,6 +24,9 @@ const index = () => {
       <div className={styles.Contact}>
         <img className={styles.Image} src="./img/contact1.png" />
         <div className={styles.Info}>
+          <div>
+          <a href="https://github.com/Enkhtuvshin-prog" className={styles.GitIcon}><SocialIcon network="github" /></a>
+          </div>
           <InputGroup className="m-3 py-2">
             <InputGroup.Text id="basic-addon1" className="bg-transparent">
               <FaUser />
@@ -55,11 +59,12 @@ const index = () => {
               aria-describedby="basic-addon1"
             />
           </InputGroup>
-          <div className="">
+          <div >
             <Button>
               Submit <FaPaperPlane className="mx-2" />{" "}
             </Button>
           </div>
+          
         </div>
       </div>
     </div>
