@@ -28,13 +28,13 @@ const NavbarMenu = () => {
             {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
             <Nav className="ms-auto" activeKey="/home">
               <Nav.Item>
-                <Nav.Link>
-                  <Link to="/"> Home</Link>
+                <Nav.Link href="/">
+                  Home
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link>
-                  <Link to="/about"> About</Link>
+                <Nav.Link href="/about">
+                  About
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>

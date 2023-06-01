@@ -7,6 +7,14 @@ import { useCallback } from "react";
 import { Particles } from "react-particles";
 import { loadFull } from "tsparticles";
 import { particlesData } from "./particlesData";
+
+const socialMediaHandlesLinks = {
+  gitHub: 'https://github.com/Enkhtuvshin-prog',
+  instagram: 'https://www.instagram.com/im_phani_murari/?hl=en',
+  linkedin: 'https://www.linkedin.com/in/phanimurari/',
+  twitter: 'https://twitter.com/ImPhaniMurari'
+};
+
 const Hero = () => {
   const particlesInit = useCallback(async (engine) => {
     // console.log(engine);
@@ -39,12 +47,11 @@ const Hero = () => {
               />
             </span>
           </h1>
-          <div className={styles.Icons}>
-            <SocialIcon network="twitter" />
-            <SocialIcon network="google" />
-            <SocialIcon network="instagram" />
-            <SocialIcon network="youtube" />
-            <SocialIcon network="facebook" />
+          <div className={styles.Icons}>                 
+            <SocialIcon network="github" url="https://github.com/Enkhtuvshin-prog" />
+           <SocialIcon network="instagram" />
+          <SocialIcon network="youtube" /> 
+           <SocialIcon network="facebook" url="https://www.facebook.com/dashnyam.enkhtuwshin/" />
           </div>
         </div>
         <div className={styles.Col}>
@@ -53,6 +60,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      
     </div>
   );
 };

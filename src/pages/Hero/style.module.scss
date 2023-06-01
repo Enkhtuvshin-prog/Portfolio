@@ -37,12 +37,17 @@
   padding: 20px;
   // text-align: start;
 }
+.Icons{
+  gap: 20px;
+}
+
 .ImgContainer {
-  max-width: 500px;
+  max-width: 600px;
   height: 500px;
-  background-image: url(../../../public/img/myprofile.jpeg);
-  background-position: center;
+  background-image: url(../../../public/img/tuvshin.jpg);
+  background-position: center center;
   background-repeat: no-repeat;
+  // background-attachment: fixed;
   background-size: cover;
   border-radius: 50%;
   box-shadow: inset 0 0 0 5px rgba(148, 52, 216, 0.3);

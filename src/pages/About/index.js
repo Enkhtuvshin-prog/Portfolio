@@ -36,20 +36,20 @@ const About = () => {
       </h1>
       <div className="row  p-5">
         <div className="col-md-5 col-sm-12  rounded mx-auto d-block">
-          <img className={styles.Image} src="./img/my.jpeg" alt=""/>
+          <img className={styles.Image} src="./img/tvshn.jpg" alt=""/>
         </div>
         <div className="col-md-5 col-sm-12 text-start  my-3">
           <h2>I'm Enkhtuvshin</h2>
           <h4>Full Stack Developer</h4>
-          <p>I am a Full-Stack developer based in Pune, India. I am an Information Technology undergraduate from SPPU. I am very passionate about improving my coding skills & developing applications & websites. I build WebApps and Websites using MERN Stack. Working for myself to improve my skills. Love to build Full-Stack clones.</p>
+          <p>Би Pinecone academy вэб хөгжүүлэгчээр сурч төгссөн. Суралцах хугацаандаа өөрийн Profile page React ашиглан хийсэн. Би өмнө нягтлан бодогчоор 2 жил ажилласан. Би  IT салбарт сонирхолтой, дуртай учраас программичлалын хэл сураад, программистаар ажиллахаар шийдсэн. Би төслийн ажил хийж байх хугацаандаа вэб хийхэд эхлээд дизайнаа зөв шинэлэг, оновчтой тодорхойлох хэрэгтэй. Мөн эхлээд судалгаа, шинжилгээ, дата сайн цуглуулаад PRD, ERD зөв оновчтой, сайн гаргах чухал гэдгийг  суралцаж мэдсэн.  </p>
           <div className={styles.BoxContent}>
             <div className={styles.box}>
-              <p><span> Age: </span> 19</p>
-              <p><span> Phone : </span> +91 704-302-4736</p>
+              <p><span> Age: </span> 26</p>
+              <p><span> Phone : </span> +976 86300551</p>
             </div>
             <div className={styles.box}>
-              <p><span> Email : </span> jigarsable21@gmail.com</p>
-              <p><span> Place : </span> Pune, India - 412206</p>
+              <p><span> Email : </span>enkhtuwshin.1201@gmail.com</p>
+              <p><span> Place : </span> Сүхбаатар дүүрэг 11 хороо 7 хороолол 512-24</p>
             </div>
         </div>
           

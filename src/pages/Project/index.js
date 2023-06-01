@@ -4,17 +4,8 @@ import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { Typewriter } from "react-simple-typewriter";
 import styles from "./style.module.scss";
 const data = [
-  { title: "React-Projects", image: "./img/reactprojects.png", link: "https://reactjs.org/" },
-  { title: "Resister-Color", image: "./img/resistercolor.PNG", link: "https://cssgradient.io/" },
-  { title: "ResumeGen", image: "./img/resumegen.png", link: "https://mui.com/" },
-  { title: "Saas", image: "./img/saas.PNG", link:"https://sass-lang.com/" },
-  // { title: "Sppuprepandroid", image: "./img/sppuprepandroid.png" },
-  // { title: "Templeweb", image: "./img/templeweb.PNG" },
-  // { title: "Tsfbank", image: "./img/tsfbank.png" },
-  // { title: "Weatherly Android", image: "./img/weatherlyandroid.png" },
-  // { title: "Webchat", image: "./img/webchat.PNG" },
-  // { title: "Webuiclones", image: "./img/webuiclones.png" },
-  // { title: "Web view app", image: "./img/webviewapp.PNG" },
+  { title: "ZTO team- Easy template", image: "./img/zto.png", link: "https://zto.vercel.app/home" },
+  { title: "Profile page", image: "./img/profile.png", link: "https://portfolio-black-eight-86.vercel.app/" },
 ];
 
 const Card = (props) => {
@@ -43,6 +34,7 @@ const index = () => {
             <Card img={x.image} title={x.title} link={x.link} />
           ))}
         </div>
+        
       </Container>
     </div>
   );
